@@ -76,9 +76,9 @@ var profileData = function(jsonData) {
 		profileString += '</ul>' 
 		profileString += '</div>' +'<hr>'
 		profileString += '<div class="statsContainer">' 
-		profileString += 	'<div class="stats">'+ '<h2>'+jsonData.followers+'</h2>'+ '<span class="statsText">Followers</span>' +'</div>' 
-		profileString += 	'<div class="stats">'+ '<h2>'+jsonData.public_gists+'</h2>'+ '<span class="statsText">Starred</span>' +'</div>' 
-		profileString += 	'<div class="stats">'+ '<h2>'+jsonData.following+'</h2>'+ '<span class="statsText">Following</span>' +'</div>'
+		profileString += 	'<div class="stats">'+ '<h3>'+jsonData.followers+'</h3>'+ '<span class="statsText">Followers</span>' +'</div>' 
+		profileString += 	'<div class="stats">'+ '<h3>'+jsonData.public_gists+'</h3>'+ '<span class="statsText">Starred</span>' +'</div>' 
+		profileString += 	'<div class="stats">'+ '<h3>'+jsonData.following+'</h3>'+ '<span class="statsText">Following</span>' +'</div>'
 		profileString += '</div>'
 //	console.log(profileString)
 	return profileString
@@ -115,7 +115,7 @@ var arrToHtml = function(repoObj) {
 	var repoString  = '<div class="repoList">'
 		repoString +=   '<h3 class="repoName">' + '<a href="' + repoObj.html_url + '">' + repoObj.name + '</a>' + '</h3>'
 		repoString +=   '<p class="repoDescription">' + repoObj.description + '</p>'	
-		repoString +=   '<p class="repoDate">Updated: <time datetime="'+ repoObj.updated_at + '</p>' 
+		repoString +=   '<p class="repoDate">Updated: <time datetime="'+ repoObj.updated_at +' ">' +'</p>' 
 		repoString += '</div>' 
  	return repoString
 }
