@@ -15,8 +15,6 @@ var repoBaseUrl= "https://api.github.com/users/wcaillet/repos"
 var repoUrl = repoBaseUrl
 
 
-
-
 // ---------- Search ------------//
 // search input function that takes in search value and changes location.hash to that value
 
@@ -42,7 +40,7 @@ var doSearchRequest = function(userName) {
   	userRepoPromise.then(repoData)
 } 
 
-http://api.github.com/users/wcaillet/repos
+//http://api.github.com/users/wcaillet/repos
   
 var inputToUrl = function(keyEvent) {
     var inputEl = keyEvent.target
